@@ -1,8 +1,13 @@
 name: watch
 
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
 on:
   schedule:
-    - cron: "50 */2 * * *"
+    - cron: "5 */2 * * *"
   workflow_dispatch:
   push:
     branches:
