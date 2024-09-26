@@ -1,0 +1,13 @@
+name: watch
+
+on:
+  schedule:
+    - cron: "50 */2 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  custom-catalog:
+    uses: grafana/k6-extension-registry/.github/workflows/custom-catalog.yml@main
