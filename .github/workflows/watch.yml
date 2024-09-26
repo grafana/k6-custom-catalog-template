@@ -1,10 +1,5 @@
 name: watch
 
-permissions:
-  pages: write
-  id-token: write
-  contents: read
-
 on:
   schedule:
     - cron: "5 */2 * * *"
@@ -16,3 +11,7 @@ on:
 jobs:
   custom-catalog:
     uses: grafana/k6-extension-registry/.github/workflows/custom-catalog.yml@main
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
