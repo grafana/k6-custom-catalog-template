@@ -15,5 +15,5 @@ permissions:
   contents: read
 
 jobs:
-  custom-catalog:
+  custom-registry:
     uses: grafana/k6-extension-registry/.github/workflows/custom-registry.yml@main
